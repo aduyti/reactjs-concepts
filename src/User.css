@@ -1,0 +1,12 @@
+.users {
+    margin: 10px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+.user {
+    border: 1px solid yellowgreen;
+    margin: 5px;
+    padding: 5px;
+}

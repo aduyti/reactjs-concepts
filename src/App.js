@@ -1,4 +1,5 @@
 import './App.css';
+import Users from './Users.js';
 import { useState } from 'react'
 
 function App() {
@@ -15,11 +16,12 @@ function App() {
       <h2>{count}</h2>
       <button onClick={inc}>Increase</button>
       <button onClick={dec}>Decrease</button>
-      <div style={{ border: '1px solid black', borderRadius: '5px', marginTop: '10px' }}>
+      <div style={{ border: '1px solid black', borderRadius: '5px', margin: '10px' }}>
         {
           people.map(person => <Person id={person.id} name={person.name} phone={person.phone}></Person>)
         }
       </div>
+      <Users url="https://jsonplaceholder.typicode.com/users"></Users>
 
     </div>
   );
